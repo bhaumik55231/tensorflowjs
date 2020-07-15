@@ -17,7 +17,7 @@ const createModel = () => {
         inputShape: [1],
         units: 1
     }));
-    model.add(tf.layers.dense({units: 100, activation: 'ReLU'}));
+    model.add(tf.layers.dense({units: 100, activation: 'sigmoid'}));
     model.add(tf.layers.dense({
         units: 1
     }));
